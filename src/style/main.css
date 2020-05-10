@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+body{
+  font-family: 16px 'Roboto';
+}
+
+.jumbotron{
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addTask{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(173, 216, 230, 0.2);
+}
+
+.addTask *{
+  width: 100%;
+}
+
+.addTask .form-label{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbotron, .allLists{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .jumbotron{
+    align-items: center;
+  }
+
+  .allLists{
+    align-items: top;
+  }
+
+  .addTask .btnAdd{
+    width: 20%;
+  }
+}
+
+.taskList{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task.notDone{
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.task.done{
+  background-color: rgba(0, 255, 0, 0.1);
+  text-decoration: line-through;
+}
