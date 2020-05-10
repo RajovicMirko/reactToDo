@@ -6,7 +6,7 @@ export class AppHead extends Component {
     return (
       <Jumbotron>
         <h1>{this.props.appTitle}</h1>
-        <a href="https://www.google.rs/" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+        <a href="https://github.com/RajovicMirko/reactToDo" target="_blank" rel="noopener noreferrer">GitHub Project</a>
       </Jumbotron>
     )
   }
